@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 8%;
+    --foreground: 210 20% 98%;
+    --primary: 262 83% 65%;
+    --secondary: 190 90% 60%;
+    --card: 222 47% 12%;
+    --muted: 217 32% 15%;
+    --muted-foreground: 215 20% 65%;
+    --border: 217 32% 17%;
+    --accent: 262 83% 20%;
+    --glass-border: 0 0% 100%;
+    --glow-primary: 262 83% 65%;
+    --glow-accent: 190 90% 60%;
+    --glow-warm: 25 85% 60%;
+    --radius: 1rem;
+  }
+
+  .claire {
+    --background: 220 25% 94%;
+    --foreground: 222 40% 12%;
+    --primary: 262 65% 52%;
+    --secondary: 190 65% 40%;
+    --card: 220 25% 98%;
+    --muted: 220 20% 88%;
+    --muted-foreground: 215 16% 42%;
+    --border: 220 15% 80%;
+    --glass-border: 0 0% 0%;
+    --glow-primary: 262 65% 52%;
+    --glow-accent: 190 65% 40%;
+    --glow-warm: 25 80% 50%;
+  }
+
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background du body en mode sombre */
+  :root body {
+    background:
+      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.08), transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(var(--secondary) / 0.08), transparent 50%),
+      hsl(var(--background));
+  }
+
+  /* Background du body en mode clair */
+  .claire body {
+    background:
+      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.05), transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(var(--secondary) / 0.05), transparent 50%),
+      hsl(var(--background));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.02em;
+  }
+
+  p { line-height: 1.7; }
+  html { scroll-behavior: smooth; }
+}
+
+@layer components {
+
+  .glass-surface {
+    @apply backdrop-blur-2xl rounded-2xl;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--card) / 0.7),
+      hsl(var(--card) / 0.4)
+    );
+    border: 1px solid hsl(var(--glass-border) / 0.15);
+    box-shadow:
+      0 10px 40px -10px rgba(0,0,0,0.15),
+      inset 0 1px 0 0 rgba(255,255,255,0.2);
+  }
+
+  /* Glass en mode clair */
+  .claire .glass-surface {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--card) / 0.85),
+      hsl(var(--card) / 0.65)
+    );
+    border: 1px solid hsl(var(--border) / 0.5);
+    box-shadow:
+      0 10px 40px -10px rgba(0,0,0,0.1),
+      inset 0 1px 0 0 rgba(255,255,255,0.95);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary)),
+      hsl(var(--primary))
+    );
+    background-size: 200% 200%;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary))
+    );
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 40px -10px hsl(var(--glow-primary) / 0.4);
+  }
+
+  .glow-hover:hover {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.4);
+  }
+
+  .text-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32 px-6 md:px-8;
+  }
+
+  /* Texte muted en mode clair */
+  .claire .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Orbs du Hero en mode clair moins intenses */
+  .claire .bg-primary\/10 {
+    background-color: hsl(var(--primary) / 0.06) !important;
+  }
+
+  .claire .bg-secondary\/10 {
+    background-color: hsl(var(--secondary) / 0.06) !important;
+  }
+}
