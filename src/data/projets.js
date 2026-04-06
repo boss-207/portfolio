@@ -17,14 +17,22 @@ export const projets = [{
     Image : '/choix.png',
     Titre : 'MonCadeuxSurmesure',
     Description : `Application intuitive permettant de créer des cadeaux personnalisés selon les préférences de l’utilisateur, avec un processus simple et automatisé pour une expérience fluide et efficace.`,
-    Langage :['React js', 'Node js', 'Express', 'MongoDB', 'GitHub'],
+    Langage :['React js', 'Node js', 'Express js', 'MongoDB', 'GitHub'],
     /*github : '',*/
 },
 {
-    Image : '/fini.png',
-    Titre : 'Gestion de stock Pharmacie',
-    Description : `Cette application est une plateforme intuitive qui permet à l’utilisateur de gérer le stock de produits dans une pharmacie. Elle offre une interface simple pour ajouter, modifier et supprimer des articles, ainsi que pour suivre les niveaux de stock et générer des rapports. En utilisant Java avec Java Swing pour l’interface utilisateur et SQLite pour la gestion de la base de données, cette application facilite la gestion efficace des stocks dans un environnement pharmaceutique.`,
-    Langage :['Java', 'JavaSwing', 'SQLite', 'GitHub'],
+    Image : '/maison.png',
+    Titre : 'MaisonAfiya',
+    Description : `Développement d’un site e-commerce de vente de vêtements avec WordPress et Elementor, incluant l’intégration de paiement FedaPay et une interface responsive optimisée pour l’expérience utilisateur.`,
+    Langage :['WordPress', 'Elementor', 'FedaPay API'],
     /*github : '',*/
-}
+},
+{
+    Image : '/wh.png',
+    Titre : 'whisindustries',
+    Description : `Création d’une interface e-commerce moderne pour WHIS Industries avec WordPress et Elementor, axée sur le design, l’UX/UI et la valorisation de l’identité de marque .`,
+    Langage :['WordPress', 'Elementor'],
+    /*github : '',*/
+},
+
 ]

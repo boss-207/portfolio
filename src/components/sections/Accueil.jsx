@@ -26,8 +26,9 @@ export default function Hero (){
 
 
   <a
-    href="/cv.pdf"
+    href="/KOUBOUMOR PÉNIEL OBOÈABA.pdf"
     target="_blank"
+    download="KOUBOUMOR PÉNIEL OBOÈABA.pdf"
     className="
     relative inline-flex items-center justify-center
 

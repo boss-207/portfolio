@@ -59,11 +59,12 @@ export default function Navbar() {
             </motion.a>
           ))}
 
-          {/*  
+          {/* 
           <button onClick={toggleTheme} className="p-2 rounded-full glass-surface ml-2">
             {theme === 'sombre' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
-          */}
+          */} 
+          
         </div>
       </motion.nav>
 

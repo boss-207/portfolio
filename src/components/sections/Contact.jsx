@@ -12,7 +12,7 @@ export default function Contact() {
 
 const socials = [
   { icon: FaGithub, label: "GitHub", href: "https://github.com/boss-207" },
-  { icon: FaLinkedin, label: "LinkedIn", href: "#" },
+  { icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/peniel-kouboumor-33202b343/" },
   { icon: FaWhatsapp, label: "WhatsApp", href: "https://wa.me/22870470202" },
   { icon: FaPhone, label: "Téléphone", href: "tel:+22870470202" },
   { icon: Mail, label: "Email", href: "mailto:penielkouboumor@gmail.com" },
