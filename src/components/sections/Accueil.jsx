@@ -26,9 +26,9 @@ export default function Hero (){
 
 
   <a
-    href="/public/KOUBOUMOR.pdf"
+    href="/KOUBOUMOR.pdf"
     target="_blank"
-    download="KOUBOUMOR.pdf"
+    download
     className="
     relative inline-flex items-center justify-center
 
