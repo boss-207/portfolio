@@ -26,7 +26,7 @@ export default function Hero (){
 
 
   <a
-    href="/KOUBOUMOR_Peniel_Oboeaba.pdf"
+    href="/KOUBOUMOR Peniel_Oboeaba.pdf"
     target="_blank"
     download
     className="
