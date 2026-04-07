@@ -26,7 +26,7 @@ export default function Hero (){
 
 
   <a
-    href="/KOUBOUMOR.pdf"
+    href="/KOUBOUMOR_Peniel_Oboeaba.pdf"
     target="_blank"
     download
     className="
@@ -46,8 +46,7 @@ export default function Hero (){
     before:absolute before:inset-0 before:rounded-full
     before:bg-gradient-to-b before:from-white/30 before:to-transparent
     before:opacity-20
-    "
-  >
+    ">
     Telecharger Mon CV
   </a>
 
@@ -80,7 +79,7 @@ export default function Hero (){
 </div>
                     </motion.div>
                     <div className="flex justify-center lg:justify-end">
-                        <motion.img initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.8}} src="/peniel.png" alt="Hero Image" className="w-80 h-80 object-cover rounded-full shadow-lg animate-float" />
+                        <motion.img initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.8}} src="/boss.png" alt="Hero Image" className="w-80 h-80 object-cover rounded-full shadow-lg animate-float" />
                     </div>
                     
                 </div>
