@@ -26,7 +26,7 @@ export default function Hero (){
 
 
   <a
-    href="/KOUBOUMOR Peniel_Oboeaba.pdf"
+    href="/KOUBOUMOR PÉNIEL OBOÈABA.pdf"
     target="_blank"
     download
     className="
@@ -79,7 +79,7 @@ export default function Hero (){
 </div>
                     </motion.div>
                     <div className="flex justify-center lg:justify-end">
-                        <motion.img initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.8}} src="/boss.png" alt="Hero Image" className="w-80 h-80 object-cover rounded-full shadow-lg animate-float" />
+                        <motion.img initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 0.8}} src="/peniel.png" alt="Hero Image" className="w-80 h-80 object-cover rounded-full shadow-lg animate-float" />
                     </div>
                     
                 </div>
